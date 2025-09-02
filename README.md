@@ -6,12 +6,12 @@ Recent advances in large language models (LLMs) have opened new opportunities fo
 
 ## Repository Structure
 - `data_pipeline/` – Data collection and preprocessing
-  - `coindesk_price_volume/` – Raw price and volume data from Coindesk
+  - `coindesk_price_volume/` – Raw price and volume data from CoinDesk
   - `technical_indicators/` – Computation of TA features (MA, MACD, BB, etc.)
   - `formatting_for_prompting/` – Converting signals into textual descriptions
-  - `final_merge/` – Merging market, on-chain, and technical features
+  - `final_merge/` – Merging market, on-chain, technical features, and news data together
 
-- `trading_pipeline/` – Prompt construction, model inference, and portfolio simulation
+- `trading_pipeline/` – Prompt construction, model inference, portfolio simulation, and evaluation process
   - `prompts/` – Hourly prompts used in experiments (bullish, bearish, sideways)
   - `model/` – Querying the LLM, parsing responses, updating portfolios
   - `evaluation/` – Evaluation metrics and visualization of performance
